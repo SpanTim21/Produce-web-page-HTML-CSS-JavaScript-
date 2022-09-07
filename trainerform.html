@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers</title>
+    <style>
+        body{
+            background-color: rgb(6, 98, 16);
+        }
+        h1{
+            background-color: brown;
+            color: white;
+            text-align:center;
+        }
+        h2{
+            background-color: brown;
+            color:rgba(244, 213, 10, 0.977);
+            text-decoration-line: underline;
+        }
+        label{
+          font-size:25px;
+          text-decoration-line: underline;
+
+        }
+
+        input{
+            font-size: 17px;
+            border-width: 3px;
+            border-color: black;
+        }
+    
+    </style>
+</head>
+<body>
+    <br>
+    <form>
+        <h2> Trainer </h2>
+        <p>
+        <label  for="trainerFirstname" > Firstname </label>
+        <input type="text" id="trainerFirstname" name = "trainerFirstname" placeholder="Type your firstname" required>
+</p>
+<p>
+        <label for="trainerLastname"> Lastname </label>
+        <input type="text" id="trainerLastname" name = "trainerLastname" placeholder="Type your lastname" required>
+</p>
+<br>
+<p>
+        <label  for="SubjectName"> Subject </label>
+        <input type="text" id="subjectName"   placeholder="Type  subject" required>
+</p>
+<br>
+        <button type="submit" id="trainerAdd">Add</button>
+        <button type="submit" id="trainerUpdate" hidden>Update</button>
+        <button type="reset" id ="trainerReset"> Reset</button>
+<br>
+
+<script src = "trainerForm.js">  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        body{
+            background-color: rgb(6, 98, 16);
+        }
+        h1{
+            background-color: brown;
+            color: white;
+            text-align:center;
+        }
+        h2{
+            background-color: brown;
+            color:rgba(244, 213, 10, 0.977);
+            text-decoration-line: underline;
+        }
+        label{
+          font-size:25px;
+          text-decoration-line: underline;
+
+        }
+
+        input{
+            font-size: 17px;
+            border-width: 3px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2> Student </h2>
+        <p>
+        <label for="Firstname"> Firstname </label>
+        <input type="text" id="studentFirstname" name="studentFirstname" placeholder="Type your firstname" required>
+    </p>
+    <p>
+        <label for="Lastname"> Lastname </label>
+        <input type="text" id="studentLastname" name = "studentLastname" placeholder="Type your lastname" required>
+    </p>
+<br>
+    <p>
+        <label for="birthDate"> Day of birth </label>
+        <input type="date" id="studentbirthDate" name = "studentbirthDate"  min="00/00/1900" max="00/00/2100" required>
+    </p>
+
+
+<br>
+
+<p>
+        <label  for="tuitionFee"> Tuition Fee </label>
+        <input type="number" id="studenttuitionFee" name = "studenttuitionFee" maxlength="20" minlength="5" placeholder="Tuition Fee" required>
+    </p>
+<br>
+<p>
+        <button type="submit" id="studentAdd"> Add </button>
+        <button type="reset" id= "studentReset"> Reset </button>
+    </p>
+
+    </form>
+    <script src ="studentForm.js">  </script>
+</body>
+</html>
